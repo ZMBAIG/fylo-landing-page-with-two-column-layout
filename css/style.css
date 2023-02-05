@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--light-grayish-blue);
+  margin: auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px;
+}
+header img {
+  width: 5rem;
+}
+.nav-menu {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+.nav-menu li:hover {
+  border-bottom: 2px solid black;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+/* =============================In All your files in one secure=========================== */
+.main-secure-files {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px 80px;
+}
+.sub-main-secure-files {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 80px;
+}
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+}
+.sub-main-secure-files p {
+  padding: 20px 0;
+}
+.form-secure {
+  max-width: 100%;
+}
+button {
+  background-color: var(--right-blue);
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+  width: 25%;
+}
+button:hover {
+  color: black;
+  opacity: 0.6;
+  cursor: pointer;
+}
+input[type="email"] {
+  font-size: 18px;
+  padding: 14px 20px;
+  font-size: 18px;
+  width: 50%;
+  margin-right: 12px;
+  border-radius: 4px;
+  border: 1px solid rgb(73, 73, 73);
+}
+figure img {
+  max-width: 100%;
+  display: block;
+  padding: 20px 80px;
+}
+
+/* =============================Stay productive, wherever you are=========================== */
+
+.main-productive-container {
+  background-image: url(../images/bg-curve-desktop.svg),
+    url(../images/bg-curve-mobile.svg);
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 40px 80px;
+}
+.productive-container {
+  padding: 20px 80px;
+}
+.productive-container p {
+  padding: 20px 0;
+}
+.flyo-works {
+  padding: 16px;
+  display: flex;
+}
+.flyo-works img {
+  width: 20px;
+}
+.flyo-works a {
+  text-decoration: none;
+  margin-right: 4px;
+  color: var(--moderate-cyan);
+  border-bottom: 2px solid var(--moderate-cyan);
+}
+.profile-card {
+  max-width: 300px;
+  max-height: 200px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+  border-radius: 6px;
+  box-shadow: 5px 5px 50px 5px rgb(212, 210, 210);
+}
+.profile-card img {
+  display: block;
+}
+.profile-info {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.profile-info img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.profile-name {
+  display: flex;
+  flex-direction: column;
+}
+.kyle-burton {
+  font-weight: 700;
+}
+.founder {
+  color: var(--light-gray);
+}
+
+/* =============================Get early access today=========================== */
+
+.get-early-access {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 30px 80px;
+  background-color: var(--desaturated-blue);
+  color: white;
+}
+.sub-get-early-access {
+  padding: 20px 80px;
+}
+.sub-get-early-access p {
+  padding: 25px 0;
+}
+.access-btn {
+  width: 220px;
+}
+.access-early-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+footer {
+  background-color: var(--very-dark-blue);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 150px 0 60px 0;
+}
+.logo-footer {
+  position: relative;
+  top: -50px;
+  bottom: 0;
+}
+.logo-footer img {
+  width: 100px;
+  padding-bottom: 12px;
+}
+.social-media {
+  display: flex;
+  gap: 20px;
+}
+.social-media li {
+  list-style: none;
+}
+.social-media i {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 8px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+.fylo-phone {
+  line-height: 2.5em;
+}
+.about-us,
+.contact-us {
+  position: relative;
+  left: -50px;
+  line-height: 2.5em;
+}
+
+/* =================================================================== */
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  padding: 20px 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* =============================Media Query=========================== */
+
+@media (max-width: 768px) {
+  .main-secure-files,
+  .main-productive-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .get-early-access {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .form-secure {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .your-email {
+    max-width: 900px;
+    padding: 14px 80px;
+    overflow: hidden;
+  }
+  .secure-btn {
+    width: 150px;
+  }
+  .access-early-form {
+    display: flex;
+    align-items: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 18px;
+  }
+}
