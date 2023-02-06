@@ -14,7 +14,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 40px 100px;
+  padding: 100px;
 }
 header img {
   width: 5rem;
@@ -51,27 +51,23 @@ h1 {
 .sub-main-secure-files p {
   padding: 20px 0;
 }
-.form-secure {
-  max-width: 100%;
-}
-input[type="email"] {
+.form-secure > input {
+  max-width: 250px;
   font-size: 18px;
   padding: 14px;
-  font-size: 18px;
-  width: 250px;
-  margin-right: 12px;
+  margin-right: 8px;
   border-radius: 4px;
   border: 1px solid rgb(73, 73, 73);
 }
 
-button {
+.form-secure > button {
   background-color: var(--right-blue);
   color: white;
   padding: 14px;
   border: none;
   font-size: 18px;
   border-radius: 4px;
-  /* width: 200px; */
+  width: 250px;
 }
 button:hover {
   color: black;
@@ -110,8 +106,11 @@ figure img {
 .flyo-works img {
   width: 20px;
 }
+
 .flyo-works a {
   text-decoration: none;
+}
+.flyo-works a:hover {
   margin-right: 4px;
   color: var(--moderate-cyan);
   border-bottom: 2px solid var(--moderate-cyan);
@@ -169,10 +168,10 @@ figure img {
 .sub-get-early-access p {
   padding: 25px 0;
 }
-.access-input {
+/* .access-input {
   display: grid;
-  width: 400px;
-}
+  width: 300px;
+} */
 .access-btn {
   width: 200px;
 }
@@ -180,6 +179,22 @@ figure img {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+.access-early-form > input {
+  font-size: 18px;
+  padding: 14px;
+  /* margin-right: 10px; */
+  border-radius: 4px;
+  border: 1px solid rgb(73, 73, 73);
+}
+.access-early-form > button {
+  background-color: var(--right-blue);
+  color: white;
+  padding: 14px;
+  border: none;
+  font-size: 18px;
+  border-radius: 4px;
+  width: 250px;
 }
 
 footer {
